@@ -1,0 +1,55 @@
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.keyboard {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  margin: 3px;
+  padding: 15px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  min-width: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  background: #555;
+}
+
+.key-long {
+  min-width: 80px;
+}
+
+.key-mid {
+  min-width: 60px;
+}
+
+.space {
+  min-width: 240px;
+}
+
+  
