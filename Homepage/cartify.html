@@ -3,13 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cartify</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Cartify – Online Shopping</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #27ae60;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521334884684-d80222895322') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .hero button {
+      background-color: white;
+      color: #27ae60;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .products {
+      padding: 3rem 2rem;
+      background-color: #fff;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: #fdfdfd;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+
+    .product-card h2 {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .product-card p {
+      color: #777;
+      margin: 0.5rem 0;
+    }
+
+    .product-card button {
+      background-color: #27ae60;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #eee;
+      color: #555;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="logo">
-      <img src="C:\Users\venka\OneDrive\Desktop\cartify\cartify logo.png" alt="Cartify Logo" />
+      <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Cartify Logo" />
       <h1>Cartify</h1>
     </div>
     <nav>
@@ -22,28 +177,58 @@
   </header>
 
   <section class="hero">
-    <h2>Cartify – Elevate Every Purchase.</h2>
-    <p>Discover amazing products, unbeatable prices, and fast delivery right at your fingertips.</p>
-    <button>Start Shopping</button>
+    <div>
+      <h2>Cartify – Elevate Every Purchase.</h2>
+      <p>Discover amazing products, unbeatable prices, and fast delivery right at your fingertips.</p>
+      <button>Start Shopping</button>
+    </div>
   </section>
 
-  <section class="features">
-    <div>
-      <h3>Free Shipping</h3>
-      <p>Enjoy free delivery on orders over ₹499 across India.</p>
-    </div>
-    <div>
-      <h3>Secure Payments</h3>
-      <p>Shop with confidence using trusted payment methods.</p>
-    </div>
-    <div>
-      <h3>24/7 Support</h3>
-      <p>Our team is here to assist you anytime, anywhere.</p>
+  <section class="products">
+    <h2>Trending Products</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61w48uq08DL._SX679_.jpg" alt="T-shirt">
+        <h2>Stylish T-shirt</h2>
+        <p>₹499</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.insider.com/5e84e28f2d654f2c2469cc6b?width=1000&format=jpeg&auto=webp" alt="Shoes">
+        <h2>Running Shoes</h2>
+        <p>₹1199</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61pIzNaNRWL._SX679_.jpg" alt="Watch">
+        <h2>Smart Watch</h2>
+        <p>₹2499</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/41atfvd58iL._SX679_.jpg" alt="Bag">
+        <h2>Backpack</h2>
+        <p>₹899</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.livemint.com/img/2024/07/24/600x338/DSLR_camera_buying_guide_1721816125038_1721816133451.jpg" alt="Camera">
+        <h2>DSLR Camera</h2>
+        <p>₹39999</p>
+        <button>Add to Cart</button>
+      </div>
+
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Cartify. All rights reserved.</p>
+    &copy; 2025 Cartify. All rights reserved.
   </footer>
+
 </body>
 </html>
