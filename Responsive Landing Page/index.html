@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chowming - Authentic Asian Cuisine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">CHOW<span class="text-gray-800">MING</span></div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-800 hover:text-red-600 transition-smooth">Home</a>
+                <a href="#" class="text-gray-800 hover:text-orange-500 transition-smooth">Menu</a>
+                <a href="#" class="text-gray-800 hover:text-orange-500 transition-smooth">Locations</a>
+                <a href="#" class="text-gray-800 hover:text-orange-500 transition-smooth">About</a>
+                <a href="#" class="text-gray-800 hover:text-orange-500 transition-smooth">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with background image and overlay -->
+    <section class="hero-bg-image relative text-white">
+        <div class="container mx-auto px-4 py-16 md:py-32 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Authentic Asian Cuisine <span class="block">For All Occasions</span></h1>
+                <p class="text-xl mb-8">Experience the rich flavors of traditional Asian dishes crafted with passion and premium ingredients.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-white text-orange-500 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-smooth">Order Now</button>
+                    <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-orange-500 transition-smooth">View Menu</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0ae9a200-5fe8-402f-b0e5-757af0bf85a6.png" alt="Delicious Asian food spread including dim sum, sushi, noodles and stir-fry in traditional ceramic dishes" class="rounded-lg shadow-xl w-full max-w-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Specialties -->
+    <section class="py-16 bg-red-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Signature Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden menu-item transition-smooth shadow-md">
+                    <img src="https://backoffice.taptouch.net/upload/images/365c38f3e3700b7291a24dc7fa6cad74.webp" alt="Steaming hot bowl of tonkotsu ramen with pork slices, soft boiled egg, and green onions" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Signature Ramen</h3>
+                        <p class="text-gray-600 mb-4">Slow-cooked broth with house-made noodles and premium ingredients simmered for 18 hours.</p>
+                        <button class="text-red-600 font-medium hover:underline">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden menu-item transition-smooth shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cdf47fc6-a56b-4f57-9386-ecaf66151322.png" alt="Assortment of colorful dim sum with bamboo steamer basket including dumplings and shumai" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dim Sum Selection</h3>
+                        <p class="text-gray-600 mb-4">Handcrafted dumplings steamed to perfection, served with our signature dipping sauces.</p>
+                        <button class="text-orange-500 font-medium hover:underline">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden menu-item transition-smooth shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dd56cd48-07cb-4482-8114-c161cd15237d.png" alt="Sushi platter with nigiri, maki rolls, and garnishes artfully arranged on black ceramic plate" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Premium Sushi Set</h3>
+                        <p class="text-gray-600 mb-4">Freshly prepared with seasonal fish imported directly from Japan's premium markets.</p>
+                        <button class="text-orange-500 font-medium hover:underline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c94148d-c675-41c3-b874-1268fcbba8d1.png" alt="Professional chef preparing food in a modern restaurant kitchen with traditional Asian ingredients" class="rounded-lg shadow-lg w-full" />
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-3xl font-bold mb-6">Our Culinary Journey</h2>
+                    <p class="text-gray-700 mb-4">Founded in 2010, Chowming began as a small family-owned restaurant with a passion for bringing authentic Asian flavors to our community.</p>
+                    <p class="text-gray-700 mb-6">Today, we continue that tradition with our team of internationally trained chefs who combine traditional techniques with modern culinary innovation.</p>
+                    <button class="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-smooth">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-red-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl">"</div>
+                        <div class="text-yellow-400 ml-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6">The best ramen I've had outside of Japan! The broth is rich and flavorful, and the noodles have the perfect texture.</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bdd3d619-1f25-4b28-92c5-7d5484ed3ebb.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl">"</div>
+                        <div class="text-yellow-400 ml-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6">Amazing dim sum selection with authentic flavors. I keep coming back for the har gow and char siu bao.</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5690655e-00f5-4abb-931f-7fa0aec2c42f.png" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl">"</div>
+                        <div class="text-yellow-400 ml-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6">The sushi is always fresh and beautifully presented. Great service and atmosphere make this my favorite spot!</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/46cb471d-5135-4946-8397-b2e1b1166cde.png" alt="Lisa Wong" class="w-12 h-12 rounded-full object-cover" />
+                        <div class="ml-4">
+                            <h4 class="font-bold">Lisa Wong</h4>
+                            <p class="text-gray-600 text-sm">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-orange-500 mb-4">CHOW<span class="text-white">MING</span></h3>
+                    <p class="text-gray-400">Bringing authentic Asian cuisine to your table since 2010.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Menu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Locations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Food Street</li>
+                        <li class="text-gray-400">Culinary City, CC 12345</li>
+                        <li class="text-gray-400">(555) 123-4567</li>
+                        <li class="text-gray-400">hello@chowming.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Opening Hours</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Mon-Thu: 11AM - 10PM</li>
+                        <li class="text-gray-400">Fri-Sat: 11AM - 11PM</li>
+                        <li class="text-gray-400">Sun: 12PM - 9PM</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <!-- Social icons can be added here if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Chowming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
